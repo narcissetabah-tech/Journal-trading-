@@ -4,7 +4,7 @@ import datetime
 
 # Configuration de la page
 st.set_page_config(page_title="Journal de Trading Pro", layout="wide")
-st.title("📈 Dashboard Trading : Analyse, Psychologie & Prix")
+st.title("📈 Dashboard Trading Mr Allamine : Analyse, Psychologie & Prix")
 
 # Initialisation de la session pour stocker les trades
 if 'journal' not in st.session_state:

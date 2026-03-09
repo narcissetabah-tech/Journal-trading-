@@ -24,7 +24,7 @@ def load_data():
         df = pd.read_csv(JOURNAL_FILE)
         # Conversion des dates au bon format
         if 'Date' in df.columns:
-            df['Date'] = pd.to_datetime(df['Date'])
+            df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
         return df
     return pd.DataFrame()
 

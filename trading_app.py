@@ -3,6 +3,14 @@ import pandas as pd
 import datetime
 import os
 
+# Injection du manifest pour la PWA
+st.markdown("""
+    <link rel="manifest" href="/app/static/manifest.json">
+    <meta name="theme-color" content="#2196F3">
+""", unsafe_allow_html=True)
+
+# ... le reste de ton code Streamlit ...
+
 # Fichier de sauvegarde
 JOURNAL_FILE = "journal_data.csv"
 

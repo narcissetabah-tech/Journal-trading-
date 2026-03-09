@@ -5,7 +5,7 @@ import os
 
 # Injection du manifest pour la PWA
 st.markdown("""
-    <link rel="manifest" href="/static/manifest.json">
+    <link rel="manifest" href="app_static/manifest.json">
     <meta name="theme-color" content="#2196F3">
 """, unsafe_allow_html=True)
 

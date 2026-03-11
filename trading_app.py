@@ -5,7 +5,9 @@ import os
 
 # Injection du manifest pour la PWA
 st.markdown("""
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
 """, unsafe_allow_html=True)
 
 # ... le reste de ton code Streamlit ...

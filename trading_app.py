@@ -9,6 +9,16 @@ st.markdown("""
     <meta name="theme-color" content="#000000">
     <meta name="mobile-web-app-capable" content="yes">
 """, unsafe_allow_html=True)
+st.markdown(
+    """
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 
 # ... le reste de ton code Streamlit ...
 
